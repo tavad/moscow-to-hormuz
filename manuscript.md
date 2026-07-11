@@ -1,7 +1,7 @@
 ---
 title: "From Moscow to Hormuz: Central Bank Balance Sheets as Early Warnings of Geopolitical Capital Flight"
 author: "Aghasi Tavadyan"
-date: 2026-07-10
+date: 2026-07-11
 bibliography: references.bib
 link-citations: true
 keywords:
@@ -204,7 +204,7 @@ The author declares that there are no conflicts of interest. This research was d
 
 # Data Availability Statement 
 
-All series used in the figures come from free, publicly available primary sources: the IMF International Reserves and Foreign Currency Liquidity (IRFCL) and World Economic Outlook databases, the IMF PortWatch platform, and the daily analytical accounts of the Central Bank of Armenia [@cba_analytical_accounts]. The R scripts that take this data and reproduce each indicator are available from the author on the [GitHub platform](TODO: need the github link). You can see a continuous update of the monitoring procedure described in section five at https://tvyal.com/rate/stress.
+All series used in the figures come from free, publicly available primary sources: the IMF International Reserves and Foreign Currency Liquidity (IRFCL) and World Economic Outlook databases, the IMF PortWatch platform, and the daily analytical accounts of the Central Bank of Armenia [@cba_analytical_accounts]. The R scripts that take this data and reproduce each indicator are available from the author on the [GitHub platform](https://github.com/tavad/moscow-to-hormuz). You can see a continuous update of the monitoring procedure described in section five at https://tvyal.com/rate/stress.
 
 
 # References
