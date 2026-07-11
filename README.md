@@ -8,6 +8,8 @@ Code, data, and figures for:
 A live implementation of the monitoring procedure described in section 5 runs at
 [https://tvyal.com/rate/stress](https://tvyal.com/rate/stress).
 
+![FX reserves excluding gold, indexed to February 2022 = 100, for nine economies. The two shaded bands mark the Russian (2022) and Iranian (2025–26) reallocation waves; the transit economies diverge from the stress zones within weeks of each event.](plots/pub/fig2_fx_reserve_divergence.png)
+
 ## Contents
 
 | Path | What it is |
