@@ -8,7 +8,7 @@ Code, data, and figures for:
 A live implementation of the monitoring procedure described in section 5 runs at
 [https://tvyal.com/rate/stress](https://tvyal.com/rate/stress).
 
-![FX reserves excluding gold, indexed to February 2022 = 100, for nine economies. The two shaded bands mark the Russian (2022) and Iranian (2025–26) reallocation waves; the transit economies diverge from the stress zones within weeks of each event.](plots/pub/fig2_fx_reserve_divergence.png)
+![FX reserves excluding gold, indexed to February 2022 = 100, for nine economies. The two shaded bands mark the Russian (2022) and Iranian (2025–26) reallocation waves; the transit economies diverge from the stress zones within weeks of each event.](plots/png/fig2_fx_reserve_divergence.png)
 
 ## Contents
 
@@ -20,7 +20,8 @@ A live implementation of the monitoring procedure described in section 5 runs at
 | `pub_03_hormuz_portwatch.R` | Figure 1 — Strait of Hormuz daily transits (IMF PortWatch) |
 | `pub_04_armenia_cba_timeline.R` | Figure 5 — Central Bank of Armenia daily analytical accounts |
 | `pub_theme.R` | Shared figure styling (sourced by the three scripts above) |
-| `plots/pub/` | The six figures as published |
+| `plots/png/` | The six figures as published |
+| `plots/tiff/` | The same figures as LZW TIFF, the format used for journal submission |
 | `data/` | Frozen CSV snapshot of every input series, as fetched in July 2026 |
 
 ## Reproducing the figures
@@ -32,7 +33,7 @@ Rscript pub_04_armenia_cba_timeline.R
 ```
 
 Each script fetches its data live from the primary source (no API keys needed),
-caches it in `cache/`, and writes PNGs to `plots/pub/`. R packages used:
+caches it in `cache/`, and writes each figure to `plots/png/` and `plots/tiff/`. R packages used:
 tidyverse, scales, lubridate, httr, jsonlite, countrycode, ggrepel, readxl, ragg.
 Figures use the Arial font family.
 

@@ -9,6 +9,7 @@
 #   - 300 dpi; colour is free online but print colour costs GBP 300/figure,
 #     so nothing may be encoded in hue alone — every series is direct-labelled
 #     and the palette (Okabe-Ito) stays distinguishable in grayscale;
+#   - no logos, no tvyal.com URLs (double-anonymous review).
 #
 # The in-house versions (theme_tvyal26 + tvyal_logo) live in the original
 # 0*.R scripts and are not touched.
@@ -21,9 +22,11 @@ suppressPackageStartupMessages({
 })
 Sys.setlocale("LC_TIME", "en_US.UTF-8")
 
-PUB_DIR    <- "plots/pub"
+PUB_DIR    <- "plots/png"
+TIFF_DIR   <- "plots/tiff"
 PUB_FAMILY <- "Arial"
-dir.create(PUB_DIR, recursive = TRUE, showWarnings = FALSE)
+dir.create(PUB_DIR,  recursive = TRUE, showWarnings = FALSE)
+dir.create(TIFF_DIR, recursive = TRUE, showWarnings = FALSE)
 
 # Okabe-Ito colourblind-safe palette (yellow omitted — too light for lines)
 OI <- c(blue      = "#0072B2", vermillion = "#D55E00", green  = "#009E73",
@@ -71,4 +74,9 @@ save_pub <- function(p, filename, w = 7, h = 4.2) {
   ggsave(path, p, width = w, height = h, dpi = 300, bg = "white",
          device = ragg::agg_png)
   cat(sprintf("Saved: %s\n", path))
+  # T&F artwork guide accepts TIFF (not PNG) for peer-review figure files
+  tiff_path <- file.path(TIFF_DIR, sub("\\.png$", ".tiff", filename))
+  ggsave(tiff_path, p, width = w, height = h, dpi = 300, bg = "white",
+         device = ragg::agg_tiff, compression = "lzw")
+  cat(sprintf("Saved: %s\n", tiff_path))
 }
