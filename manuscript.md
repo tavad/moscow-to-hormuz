@@ -151,11 +151,11 @@ Data on reserves confirm the above: as of March 2026, Armenia’s foreign exchan
 
 Macroeconomic data, when finally published, showed a significant influx. In 2025, Armenia’s GDP grew by 7.2 percent (versus the IMF’s forecast of 4.5 percent and the World Bank’s 5.0-5.2 percent predictions), the rise of which was recorded in the last quarter of 2025, growing close to 10 percent. The structure of growth itself suggests a corridor nature: construction grew by 21 percent, information and communication technologies (ICT) by 18.6 percent, and financial services by 14.7 percent. Such a structure implies capital inflow and absorption rather than trade [@tavadyan2023navigating]. The inaccuracy of the forecasts itself confirms the hypothesis of a visibility gap. The estimates of structures guided by traditional statistics were 2-3 percentage points lower than the actual result, which had already been announced months ago by the Central Bank’s statistics on operations.
 
-Another signal recorded during the same period shows that the sensor is able to pick up more than capital inflows. In March 2026, the ruble depreciated by 10.8 percent, while the price of Brent crude oil rose by 46 percent. This phenomenon indicated a break in the two-decade-old “oil-ruble” correlation, when it became zero. In Armenian markets, which handle a significant volume of ruble transactions, this deviation was recorded in real time. The break indicated that oil revenues were no longer being transferred through Russia’s external accounts through normal channels (delays in settlements, suspension of fiscal rules, restrictions on yuan channels). In essence, information about the economy of origin became analyzable in the market data of the transit economy much earlier than it could be collected from Russian sources.
+Another signal recorded during the same period shows that the sensor is able to detect more than capital inflows. In March 2026, the ruble depreciated by 10.8 percent, while the price of Brent crude oil rose by 46 percent. This phenomenon indicated a break in the two-decade-old “oil-ruble” correlation, when it became zero. In Armenian markets, which handle a significant volume of ruble transactions, this deviation was recorded in real time. The break indicated that oil revenues were no longer being transferred through Russia’s external accounts through normal channels (delays in settlements, suspension of fiscal rules, restrictions on yuan channels). In essence, information about the economy of origin became analyzable in the market data of the transit economy much earlier than it could be collected from Russian sources.
 
-![Figure 6. Money-market rate change versus reserve dynamics in the two wave windows (2022 and 2025–26): currency protection matrix. Economies in the upper left corner defend against outflows, losing reserves and raising rates, while economies on the right side absorb inflows. Armenia is on the absorption side in both waves: with a modest rate rise of about 1.5 percentage points during the global tightening of 2022, and with flat rates in 2025–26.](plots/png/fig6_absorption_vs_defence.png)
+![Figure 6. Comparison of two waves (2022 and 2025-26) on reserve dynamics and money-market rate changes. Economies in the upper left quadrant are defending against outflows, losing reserves, and raising interest rates, while economies on the right are absorbing inflows. In both waves, Armenia and Georgia are in the absorption zone.](plots/png/fig6_absorption_vs_defence.png)
 
-Figure 6 presents the Armenian impulse in a comparative context. When comparing the change in the policy rate with the dynamics of reserves, the difference between currency-protecting and inflow-absorbing economies becomes apparent. In both waves, the corridor economies are concentrated on the absorption side, accumulating reserves without the sharp defensive rate increases visible among the protecting economies. Armenia's rates rose by about 1.5 percentage points in 2022, in line with the global tightening of that year, and stayed flat in 2025–26; an inflow chasing yield would have required the opposite pattern. In the absence of interest rate protection, the accumulation of reserves is the main factor that distinguishes capital flight from pure interest rate arbitrage (carry trade) in cross-sectoral analysis [@davis2021foreign; @feng2023geopolitical].
+Figure 6 presents the Armenian impulse in a comparative context. When comparing the change in the policy rate with the dynamics of reserves, the difference between currency-protecting and inflow-absorbing economies becomes apparent. In both waves, the corridor economies ensured the absorption of capital: the accumulation of reserves was recorded without a sharp increase in interest rates typical of defense economies. In particular, in 2022, interest rates in Armenia increased by about 1.5 percentage points, in line with global tightening, and remained unchanged in 2025-2026. In the case of a purely yield-driven inflow, the diametrically opposite trend would be recorded. In the absence of interest rate protection, the accumulation of reserves is the main factor that distinguishes capital flight from pure interest rate arbitrage (carry trade) in cross-sectoral analysis [@davis2021foreign; @feng2023geopolitical].
 
 ## The cost component: why the impulse cannot be suppressed or hidden
 
@@ -198,13 +198,23 @@ First and foremost, I would like to thank my father, Ashot Tavadyan; my mentor a
 
 Parts of this paper were first developed and published in the analysis section of tvyal.com, where I have been writing since 2023. Without the establishment of this website and constant work on it, I would not have been able to start and finish this project. I would especially like to mention the analyses on [the broken oil-ruble relationship post Hormuz closure (March 2026)](https://tvyal.com/analysis/en/2026/2026-03-24/) and on [Iranian capital flight (April 2026)](https://tvyal.com/analysis/en/2026/2026-04-17/). 
 
-# Disclosure Statement 
+# Disclosure statement 
 
 The author declares that there are no conflicts of interest. This research was done with no funding.
 
-# Data Availability Statement 
+# Statement on the use of artificial intelligence
+
+During the preparation of this work the author used Claude (Anthropic; Claude 4-family) as an assistive tool: to stress-test the argument during its development, to run grammar passes over the manuscript, and to assist in writing the data-retrieval (API) sections of the R scripts in the replication package. These interventions were restricted to enhancing human-generated material and did not involve autonomous content creation or generative editorial work. All substantive decisions regarding theory, empirical strategy, data construction, and interpretation were made solely by the author, and all AI-generated content was critically evaluated before incorporation.
+
+# Data availability statement 
 
 All series used in the figures come from free, publicly available primary sources: the IMF International Reserves and Foreign Currency Liquidity (IRFCL) and World Economic Outlook databases, the IMF PortWatch platform, and the daily analytical accounts of the Central Bank of Armenia [@cba_analytical_accounts]. The R scripts that take this data and reproduce each indicator are available from the author on the [GitHub platform](https://github.com/tavad/moscow-to-hormuz). You can see a continuous update of the monitoring procedure described in section five at https://tvyal.com/rate/stress.
+
+# Additional information
+
+## Notes on contributors
+
+Aghasi Tavadyan is an Associate Professor of Economics at the Armenian State University of Economics and the Russian-Armenian University. His research focuses on the macroeconomy of Armenia and adjacent countries, as well as applied economic monitoring. He is the founder of tvyal.com, an open data-analytics platform on Armenia's economy, whose live monitoring tools include the central-bank stress monitor described in this paper.
 
 
 # References
